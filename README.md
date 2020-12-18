@@ -1,2 +1,5 @@
-# cAlgo
-this is a algo
+# CAlgo
+
+## CAlgo是什么
+
+CAlgo是一个使用`C`语言，以面向对象的方式，实现的数据结构算法库。书中算法参考《算法导论》。
