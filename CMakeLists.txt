@@ -12,8 +12,9 @@ enable_testing()
 
 include_directories(SYSTEM ${CMAKE_CURRENT_SOURCE_DIR}/include)
 aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/src DIR_SRCS)
+message(${DIR_SRCS})
     
 add_library(${This} STATIC ${DIR_SRCS})
-    
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/lib/googletest)
+
+add_subdirectory(googletest)
 add_subdirectory(test)
