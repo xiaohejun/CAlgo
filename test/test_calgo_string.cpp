@@ -12,4 +12,17 @@ TEST(calgo_string, give_new_string)
     Delete(a);
 }
 
+TEST(calgo_string, clone_a_string)
+{
+    void *a = New(CALGO_String, "a");
+    void *aa = Clone(a);
+    void *b = New(CALGO_String, "b");
+    
+    EXPECT_EQ(Differ(a, b), -1);
+    EXPECT_EQ(Differ(a, aa), 0);
+    EXPECT_FALSE(a == aa);
 
+    Delete(a);
+    Delete(aa);
+    Delete(b);
+}
