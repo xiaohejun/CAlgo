@@ -5,6 +5,8 @@
 extern "C" {
 #endif
 
+typedef void (*FreeFunc)(void *);
+
 #define STATIC_CAST(type, val) ((type)(val))
 
 inline void *GetArraryVal(const void *arr, uint32_t index, size_t valSize);

@@ -2,14 +2,13 @@
 #define Vector_H
 
 #include <ctype.h>
+#include "calgo_public.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 #define VEC_COUNT(vec) ((vec)->count)
-
-typedef void (*FreeFunc)(void *);
 
 typedef struct Vector_ {
     void *datas;
